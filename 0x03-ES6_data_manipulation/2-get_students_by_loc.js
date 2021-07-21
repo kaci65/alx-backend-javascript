@@ -3,4 +3,5 @@ export default function getStudentsByLocation(students, city) {
     const studentsLoc = students.filter((student) => student.location.indexOf(city) !== -1);
     return studentsLoc;
   }
+  return [];
 }
