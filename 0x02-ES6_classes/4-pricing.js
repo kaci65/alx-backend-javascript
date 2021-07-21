@@ -30,12 +30,7 @@ export default class Pricing {
   }
 
   static convertPrice(amount, conversionRate) {
-    // if (typeof (amount) !== 'number') {
-    // throw TypeError('Amount must be a number');
-    // }
-    // if (typeof (conversionRate) !== 'number') {
-    // throw TypeError('ConversionRate must be a number');
-    // }
     return amount * conversionRate;
   }
 }
+Pricing.convertPrice();
