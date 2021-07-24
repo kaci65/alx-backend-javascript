@@ -1,7 +1,7 @@
 const studentsList = [
   {
     id: 1,
-    firstName: 'Guillame',
+    firstName: 'Guillaume',
     location: 'San Francisco',
   },
   {
