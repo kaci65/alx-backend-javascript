@@ -1,8 +1,11 @@
 export default function updateUniqueItems(groceryMap) {
-  for (const [key, value] of groceryMap.entries()) {
-    if (value === 1) {
-      groceryMap.set(key, 100);
+  if (groceryMap instanceof Map) {
+    for (const [key, value] of groceryMap) {
+      if (value === 1) {
+        groceryMap.set(key, 100);
+      }
     }
+    return groceryMap;
   }
-  return groceryMap;
+  throw TypeError('Cannot process');
 }
